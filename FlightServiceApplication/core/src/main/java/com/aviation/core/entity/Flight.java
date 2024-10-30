@@ -25,7 +25,7 @@ public class Flight {
     private String flight;
     //Страна-страна
     private String city;
-    //Врем прилета/отлета
+    //Время прилета/отлета
     private Date time;
     //Статус
     private String status;
