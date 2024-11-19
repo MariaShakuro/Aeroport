@@ -1,36 +1,51 @@
 package com.aviation.core.DTO;
+
+import java.util.Date;
+
 public class FlightDTO {
-    /*
-    * public class FlightDTO {
     private Long id;
-    private String flightNumber;
-    private String destination;
-    private String departureTime;
+    private String personalID;
+    private String flight;
+    private String city;
+    private Date time;
+    private String status;
     // Геттеры и сеттеры
-    public Long getId() {
+    public void setId(Long id){
+        this.id=id;
+    }
+    public Long getId(){
         return id;
     }
-    public void setId(Long id) {
-        this.id = id;
+    public String getPersonalID() {
+        return personalID;
     }
-    public String getFlightNumber() {
-        return flightNumber;
+    public void setPersonalID(String personalID) {
+        this.personalID = personalID;
     }
-    public void setFlightNumber(String flightNumber) {
-        this.flightNumber = flightNumber;
+    public String getFlight() {
+        return flight;
     }
-    public String getDestination() {
-        return destination;
+    public void setFlight(String flight) {
+        this.flight = flight;
     }
-    public void setDestination(String destination) {
-        this.destination = destination;
+    public String getCity() {
+        return city;
     }
-    public String getDepartureTime() {
-        return departureTime;
+    public void setCity(String city) {
+        this.city = city;
     }
-    public void setDepartureTime(String departureTime) {
-        this.departureTime = departureTime;
+    public Date getTime() {
+        return time;
     }
-}
-*/
+    public void setTime(Date time) {
+        this.time =time;
+    }
+    public String getStatus() {
+        return status;
+    }
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
+
 }

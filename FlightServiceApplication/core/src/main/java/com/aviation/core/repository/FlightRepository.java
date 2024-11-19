@@ -1,11 +1,10 @@
 package com.aviation.core.repository;
 
-import com.aviation.core.entity.Flight;
-import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
+import com.aviation.core.entity.FlightEntity;
+import org.springframework.data.jpa.repository.JpaRepository;
 
-import java.util.List;
-
-public interface FlightRepository extends JpaRepository<Flight,Long> {
-    List<Flight> findByDestination(String destination);
+@Repository
+public interface FlightRepository extends JpaRepository<FlightEntity,Long> {
+  //  List<Flight> findByDestination(String destination);
 }
