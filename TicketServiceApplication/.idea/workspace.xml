@@ -4,48 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d7b487b7-5e72-4a51-b8d3-977a6b82f23f" name="Changes" comment="added archivation and encryption">
-      <change afterPath="$PROJECT_DIR$/../FlightServiceApplication/core/src/main/java/com/aviation/core/service/JsonFormat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FlightServiceApplication/core/src/main/java/com/aviation/core/service/TxtFormat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FlightServiceApplication/core/src/main/java/com/aviation/core/service/XmlFormat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FlightServiceApplication/core/src/main/java/com/aviation/core/service/YamlFormat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TicketInfo.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TicketInfo.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TicketInfo.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TicketInfo.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ticket/src/main/java/com/aviation/core/DTO/TicketDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ticket/src/main/java/com/aviation/core/database/DatabaseConnection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ticket/src/main/java/com/aviation/core/format/FileFormat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ticket/src/main/java/com/aviation/core/format/JSONFormat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ticket/src/main/java/com/aviation/core/format/XMLFormat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ticket/src/test/java/com/aviation/core/archiencrypt/JarFileTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ticket/src/test/java/com/aviation/core/archiencrypt/ZipFileTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BookingServiceApplication/booking/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../BookingServiceApplication/booking/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BookingServiceApplication/booking/src/main/java/com/aviation/core/DTO/BookingDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BookingServiceApplication/booking/src/main/java/com/aviation/core/controller/BookingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BookingServiceApplication/booking/src/main/java/com/aviation/core/controller/BookingController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BookingServiceApplication/booking/src/main/java/com/aviation/core/repository/BookingRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BookingServiceApplication/booking/src/main/java/com/aviation/core/repository/BookingRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BookingServiceApplication/booking/src/main/java/com/aviation/core/service/BookingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BookingServiceApplication/booking/src/main/java/com/aviation/core/service/BookingService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BookingServiceApplication/booking/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../BookingServiceApplication/booking/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DisplayServiceApplication/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../DisplayServiceApplication/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DisplayServiceApplication/display/src/main/java/com/aviation/core/controller/DisplayController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DisplayServiceApplication/display/src/main/java/com/aviation/core/controller/DisplayController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DisplayServiceApplication/display/src/main/java/com/aviation/core/entity/Display.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DisplayServiceApplication/display/src/main/java/com/aviation/core/entity/Display.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DisplayServiceApplication/display/src/main/java/com/aviation/core/repository/DisplayRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DisplayServiceApplication/display/src/main/java/com/aviation/core/repository/DisplayRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlightServiceApplication/core/src/main/java/com/aviation/core/DTO/FlightDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlightServiceApplication/core/src/main/java/com/aviation/core/controller/FlightController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../FlightServiceApplication/core/src/main/java/com/aviation/core/controller/FlightController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlightServiceApplication/core/src/main/java/com/aviation/core/entity/FlightEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../FlightServiceApplication/core/src/main/java/com/aviation/core/entity/FlightEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlightServiceApplication/core/src/main/java/com/aviation/core/service/FlightService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../FlightServiceApplication/core/src/main/java/com/aviation/core/service/FlightService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tasks.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Tasks.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ticket/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ticket/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ticket/src/main/java/com/aviation/core/TicketApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/ticket/src/main/java/com/aviation/core/TicketServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ticket/src/main/java/com/aviation/core/format/TXTReader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ticket/src/main/java/com/aviation/core/format/TXTWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/ticket/src/main/java/com/aviation/core/format/TXTFormat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ticket/src/main/java/com/aviation/core/format/XMLReader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ticket/src/main/java/com/aviation/core/format/XMLWriter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ticket/src/main/java/com/aviation/core/format/YAMLReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/ticket/src/main/java/com/aviation/core/format/YAMLFormat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ticket/src/main/java/com/aviation/core/format/YAMLWriter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ticket/src/main/java/com/aviation/core/service/TicketSevice.java" beforeDir="false" afterPath="$PROJECT_DIR$/ticket/src/main/java/com/aviation/core/service/TicketSevice.java" afterDir="false" />
-    </list>
+    <list default="true" id="d7b487b7-5e72-4a51-b8d3-977a6b82f23f" name="Changes" comment="added changes for connection" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -159,7 +118,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732655353584</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="added changes for connection">
+      <option name="closed" value="true" />
+      <created>1733175619894</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1733175619894</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -170,6 +137,7 @@
     <MESSAGE value="added some notions for console" />
     <MESSAGE value="added formations" />
     <MESSAGE value="added archivation and encryption" />
-    <option name="LAST_COMMIT_MESSAGE" value="added archivation and encryption" />
+    <MESSAGE value="added changes for connection" />
+    <option name="LAST_COMMIT_MESSAGE" value="added changes for connection" />
   </component>
 </project>
