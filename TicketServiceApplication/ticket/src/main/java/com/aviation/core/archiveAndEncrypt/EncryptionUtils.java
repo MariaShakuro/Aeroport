@@ -1,14 +1,14 @@
-package com.aviation.core.archiencrypt;
+package com.aviation.core.archiveAndEncrypt;
 
 import javax.crypto.Cipher;
-import javax.crypto.KeyGenerator;
-import javax.crypto.SecretKey;
 import javax.crypto.spec.SecretKeySpec;
-import java.io.*;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.security.Key;
 import java.util.Base64;
-//библиотека import javax.crypto для выполнения по алгоритму AES
-public class Encryption{
+
+public class EncryptionUtils {
 
     private static final String ALGORITHM = "AES";
     private static final String TRANSFORMATION = "AES";
@@ -58,3 +58,4 @@ public class Encryption{
         }
     }
 }
+

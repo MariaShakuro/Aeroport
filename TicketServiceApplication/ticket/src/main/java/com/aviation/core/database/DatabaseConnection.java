@@ -1,7 +1,5 @@
 package com.aviation.core.database;
 
-import velo.AbstractVelo;
-import velo.ConcreteVelo;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -79,23 +77,6 @@ public class DatabaseConnection {
             throw new SQLException("Ошибка вставки данных в базу данных", e);
         }
     }
-    // Метод для чтения объектов из базы данных
-    public List<AbstractVelo> readBikesFromDatabase() throws SQLException {
-        List<AbstractVelo> bikes = new ArrayList<>();
-        String query = "SELECT * FROM velo";
-        try (Statement stmt = connection.createStatement();
-             ResultSet rs = stmt.executeQuery(query)) {
-            while (rs.next()) {
-                int id = rs.getInt("id");
-                Date date = rs.getDate("date");
-                String type = rs.getString("type");
-                String model = rs.getString("model");
-                double price = rs.getDouble("price");
-                double max_speed = rs.getDouble("max_speed");
-                bikes.add(new ConcreteVelo(id, date, type, model, price, max_speed));
-            }
-        }
-        return bikes;
-    }
+
 }
 

@@ -4,46 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7103923d-fbe9-4ffe-9ef3-0a51f285766e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../FlightServiceApplication/core/src/main/java/com/aviation/core/service/JsonFormat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FlightServiceApplication/core/src/main/java/com/aviation/core/service/TxtFormat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FlightServiceApplication/core/src/main/java/com/aviation/core/service/XmlFormat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FlightServiceApplication/core/src/main/java/com/aviation/core/service/YamlFormat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TicketServiceApplication/TicketInfo.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TicketServiceApplication/TicketInfo.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TicketServiceApplication/TicketInfo.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TicketServiceApplication/TicketInfo.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TicketServiceApplication/ticket/src/main/java/com/aviation/core/DTO/TicketDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TicketServiceApplication/ticket/src/main/java/com/aviation/core/database/DatabaseConnection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TicketServiceApplication/ticket/src/main/java/com/aviation/core/format/FileFormat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TicketServiceApplication/ticket/src/main/java/com/aviation/core/format/JSONFormat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TicketServiceApplication/ticket/src/main/java/com/aviation/core/format/XMLFormat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TicketServiceApplication/ticket/src/test/java/com/aviation/core/archiencrypt/JarFileTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TicketServiceApplication/ticket/src/test/java/com/aviation/core/archiencrypt/ZipFileTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BookingServiceApplication/booking/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../BookingServiceApplication/booking/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BookingServiceApplication/booking/src/main/java/com/aviation/core/DTO/BookingDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BookingServiceApplication/booking/src/main/java/com/aviation/core/controller/BookingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BookingServiceApplication/booking/src/main/java/com/aviation/core/controller/BookingController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BookingServiceApplication/booking/src/main/java/com/aviation/core/repository/BookingRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BookingServiceApplication/booking/src/main/java/com/aviation/core/repository/BookingRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BookingServiceApplication/booking/src/main/java/com/aviation/core/service/BookingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BookingServiceApplication/booking/src/main/java/com/aviation/core/service/BookingService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BookingServiceApplication/booking/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../BookingServiceApplication/booking/src/main/resources/application.properties" afterDir="false" />
+    <list default="true" id="7103923d-fbe9-4ffe-9ef3-0a51f285766e" name="Changes" comment="added changes for connection">
+      <change afterPath="$PROJECT_DIR$/../TicketServiceApplication/ticket/src/main/java/com/aviation/core/archiveAndEncrypt/ArchiveUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TicketServiceApplication/ticket/src/main/java/com/aviation/core/arithmeticAdds/DataProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TicketServiceApplication/ticket/src/main/java/com/aviation/core/fileUtil/FileReaderUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TicketServiceApplication/ticket/src/main/java/com/aviation/core/fileUtil/FileWriterUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/display/src/main/java/com/aviation/core/controller/DisplayController.java" beforeDir="false" afterPath="$PROJECT_DIR$/display/src/main/java/com/aviation/core/controller/DisplayController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/display/src/main/java/com/aviation/core/entity/Display.java" beforeDir="false" afterPath="$PROJECT_DIR$/display/src/main/java/com/aviation/core/entity/Display.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/display/src/main/java/com/aviation/core/repository/DisplayRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/display/src/main/java/com/aviation/core/repository/DisplayRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlightServiceApplication/core/src/main/java/com/aviation/core/DTO/FlightDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlightServiceApplication/core/src/main/java/com/aviation/core/controller/FlightController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../FlightServiceApplication/core/src/main/java/com/aviation/core/controller/FlightController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlightServiceApplication/core/src/main/java/com/aviation/core/entity/FlightEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../FlightServiceApplication/core/src/main/java/com/aviation/core/entity/FlightEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlightServiceApplication/core/src/main/java/com/aviation/core/service/FlightService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../FlightServiceApplication/core/src/main/java/com/aviation/core/service/FlightService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Tasks.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Tasks.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../TicketServiceApplication/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TicketServiceApplication/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../TicketServiceApplication/ticket/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TicketServiceApplication/ticket/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TicketServiceApplication/ticket/src/main/java/com/aviation/core/TicketApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../TicketServiceApplication/ticket/src/main/java/com/aviation/core/TicketServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TicketServiceApplication/ticket/src/main/java/com/aviation/core/format/TXTReader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TicketServiceApplication/ticket/src/main/java/com/aviation/core/format/TXTWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../TicketServiceApplication/ticket/src/main/java/com/aviation/core/format/TXTFormat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TicketServiceApplication/ticket/src/main/java/com/aviation/core/format/XMLReader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TicketServiceApplication/ticket/src/main/java/com/aviation/core/format/XMLWriter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TicketServiceApplication/ticket/src/main/java/com/aviation/core/format/YAMLReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/../TicketServiceApplication/ticket/src/main/java/com/aviation/core/format/YAMLFormat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TicketServiceApplication/ticket/src/main/java/com/aviation/core/format/YAMLWriter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TicketServiceApplication/ticket/src/main/java/TicketConsolExplorer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TicketServiceApplication/ticket/src/main/java/com/aviation/core/TicketConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TicketServiceApplication/ticket/src/main/java/com/aviation/core/archiencrypt/ArchiveUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TicketServiceApplication/ticket/src/main/java/com/aviation/core/archiencrypt/Encryption.java" beforeDir="false" afterPath="$PROJECT_DIR$/../TicketServiceApplication/ticket/src/main/java/com/aviation/core/archiveAndEncrypt/EncryptionUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TicketServiceApplication/ticket/src/main/java/com/aviation/core/archiencrypt/FileProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/../TicketServiceApplication/ticket/src/main/java/com/aviation/core/archiveAndEncrypt/archiveAndEncrypt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TicketServiceApplication/ticket/src/main/java/com/aviation/core/controller/TicketController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../TicketServiceApplication/ticket/src/main/java/com/aviation/core/controller/TicketController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TicketServiceApplication/ticket/src/main/java/com/aviation/core/format/FileFormat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TicketServiceApplication/ticket/src/main/java/com/aviation/core/format/JSONFormat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TicketServiceApplication/ticket/src/main/java/com/aviation/core/format/TXTFormat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TicketServiceApplication/ticket/src/main/java/com/aviation/core/format/XMLFormat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TicketServiceApplication/ticket/src/main/java/com/aviation/core/format/YAMLFormat.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../TicketServiceApplication/ticket/src/main/java/com/aviation/core/service/TicketSevice.java" beforeDir="false" afterPath="$PROJECT_DIR$/../TicketServiceApplication/ticket/src/main/java/com/aviation/core/service/TicketSevice.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -70,14 +50,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/from_past_pc/Labs 2 grade/ПП/Aeroport/Aeroport/DisplayServiceApplication&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/from_past_pc/Labs 2 grade/ПП/Aeroport/Aeroport/FlightServiceApplication"
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -87,6 +67,19 @@
       <option name="presentableId" value="Default" />
       <updated>1730316166896</updated>
     </task>
+    <task id="LOCAL-00001" summary="added changes for connection">
+      <option name="closed" value="true" />
+      <created>1733175655097</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1733175655097</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added changes for connection" />
+    <option name="LAST_COMMIT_MESSAGE" value="added changes for connection" />
   </component>
 </project>

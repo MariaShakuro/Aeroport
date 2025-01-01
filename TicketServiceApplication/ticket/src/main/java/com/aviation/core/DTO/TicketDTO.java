@@ -1,11 +1,16 @@
 package com.aviation.core.DTO;
 
-import java.util.Date;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.stereotype.Component;
 
+import java.util.Date;
+@Component
 public class TicketDTO {
     private Long ticketNumber;
     private String passengerName;
     private String passengerSurname;
+    private Integer passengerAge;
+    private Double ticketPrice;
     private String cityOfRegistration;
     private String cityOfDestination;
     private String seat;
@@ -19,6 +24,23 @@ public class TicketDTO {
     private String bookingCode;
     //Мб Стринги?
     private Long baggageIdNumber;
+
+    public Double getTicketPrice() {
+        return ticketPrice;
+    }
+
+    public void setTicketPrice(Double ticketPrice) {
+        this.ticketPrice = ticketPrice;
+    }
+
+    public void setPassengerAge(Integer passengerAge) {
+        this.passengerAge = passengerAge;
+    }
+
+    public int getPassengerAge() {
+        return passengerAge;
+    }
+
     public Long getTicketNumber(){
         return ticketNumber;
     }
