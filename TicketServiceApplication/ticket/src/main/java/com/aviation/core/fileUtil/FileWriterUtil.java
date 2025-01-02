@@ -42,8 +42,6 @@ public class FileWriterUtil {
             DocumentBuilder docBuilder = docFactory.newDocumentBuilder();
             Document doc = docBuilder.newDocument();
 
-
-
             // Корневой элемент
             org.w3c.dom.Element rootElement = doc.createElement("ticket");
             doc.appendChild(rootElement);

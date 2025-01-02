@@ -20,9 +20,7 @@ public class TicketDTO {
     private String gate;
     private Integer terminal;
     private Character classOfSeat;
-    //Это будет Стринги?
     private String bookingCode;
-    //Мб Стринги?
     private Long baggageIdNumber;
 
     public Double getTicketPrice() {

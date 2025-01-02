@@ -22,7 +22,6 @@ public class BarcodeGenerator {
         if (!dir.exists()) {
             dir.mkdirs();
         }
-
         QRCodeWriter qrCodeWriter = new QRCodeWriter();
         BitMatrix bitMatrix = qrCodeWriter.encode(text, BarcodeFormat.QR_CODE, 200, 200);
 
@@ -31,8 +30,7 @@ public class BarcodeGenerator {
 
         return hashFile(path);
     }
-
-    private static String hashFile(Path path) throws IOException, NoSuchAlgorithmException {
+    protected static String hashFile(Path path) throws IOException, NoSuchAlgorithmException {
         byte[] imageBytes = Files.readAllBytes(path);
         MessageDigest digest = MessageDigest.getInstance("SHA-256");
         byte[] hash = digest.digest(imageBytes);

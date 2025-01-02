@@ -43,16 +43,16 @@ public class DataProcessor {
     }
 
     // Обработка текстового файла
-    public static List<String> processTextFile(List<String> lines) {
+   /* public static List<String> processTextFile(List<String> lines) {
         List<String> processedLines = new ArrayList<>();
         for (String line : lines) {
             processedLines.add(replaceArithmeticOperations(line));
         }
         return processedLines;
-    }
+    }*/
 
     // Обработка XML файла
-    public static Document processXmlFile(Document document) {
+   /* public static Document processXmlFile(Document document) {
         NodeList nodeList = document.getElementsByTagName("*");
         for (int i = 0; i < nodeList.getLength(); i++) {
             Node node = nodeList.item(i);
@@ -63,16 +63,16 @@ public class DataProcessor {
             }
         }
         return document;
-    }
+    }*/
 
     // Обработка JSON файла
-    public static <T> T processJsonFile(T data) {
+ /*   public static <T> T processJsonFile(T data) {
         // Реализация логики обработки данных JSON, если необходимо
         return data;
-    }
+    }*/
 
     // Замена арифметических операций результатами
-    private static String replaceArithmeticOperations(String content) {
+    protected static String replaceArithmeticOperations(String content) {
         Pattern pattern = Pattern.compile("([-+/*]?\\d+\\.?\\d*)");
         Matcher matcher = pattern.matcher(content);
         while (matcher.find()) {

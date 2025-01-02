@@ -4,15 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d7b487b7-5e72-4a51-b8d3-977a6b82f23f" name="Changes" comment="created CRUD functions for ticket">
+    <list default="true" id="d7b487b7-5e72-4a51-b8d3-977a6b82f23f" name="Changes" comment="added yaml format">
+      <change afterPath="$PROJECT_DIR$/ticket/src/test/java/com/aviation/core/archiveAndEncrypt/ArchiveUtilsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ticket/src/test/java/com/aviation/core/archiveAndEncrypt/EncryptionUtilsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ticket/src/test/java/com/aviation/core/arithmeticAdds/DataProcessorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ticket/src/test/java/com/aviation/core/controller/TicketControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ticket/src/test/java/com/aviation/core/fileUtil/FileReaderUtilTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ticket/src/test/java/com/aviation/core/fileUtil/FileWriterUtilTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ticket/src/test/java/com/aviation/core/repository/TicketRepositoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ticket/src/test/java/com/aviation/core/security/SecurityConfigTicketTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ticket/src/test/java/com/aviation/core/service/BarcodeGeneratorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ticket/src/test/java/com/aviation/core/service/ConsoleAppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ticket/src/test/java/com/aviation/core/service/TicketServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ticket/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ticket/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ticket/src/main/java/com/aviation/core/controller/TicketController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ticket/src/main/java/com/aviation/core/controller/TicketController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ticket/src/main/java/com/aviation/core/fileUtil/FileReaderUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/ticket/src/main/java/com/aviation/core/fileUtil/FileReaderUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ticket/src/main/java/com/aviation/core/DTO/TicketDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/ticket/src/main/java/com/aviation/core/DTO/TicketDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ticket/src/main/java/com/aviation/core/archiveAndEncrypt/ArchiveUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/ticket/src/main/java/com/aviation/core/archiveAndEncrypt/ArchiveUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ticket/src/main/java/com/aviation/core/arithmeticAdds/DataProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/ticket/src/main/java/com/aviation/core/arithmeticAdds/DataProcessor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ticket/src/main/java/com/aviation/core/fileUtil/FileWriterUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/ticket/src/main/java/com/aviation/core/fileUtil/FileWriterUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ticket/src/main/java/com/aviation/core/repository/TicketRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/ticket/src/main/java/com/aviation/core/repository/TicketRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ticket/src/main/java/com/aviation/core/service/BarcodeGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/ticket/src/main/java/com/aviation/core/service/BarcodeGenerator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ticket/src/main/java/com/aviation/core/service/ConsoleApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/ticket/src/main/java/com/aviation/core/service/ConsoleApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ticket/src/main/java/com/aviation/core/service/TicketService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ticket/src/main/java/com/aviation/core/service/TicketService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ticket/src/test/java/com/aviation/core/archiencrypt/JarFileTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ticket/src/test/java/com/aviation/core/archiencrypt/ZipFileTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,8 +36,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -39,27 +52,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.TicketServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/from_past_pc/Labs 2 grade/ПП/Aeroport/Aeroport/Tasks.txt&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.TicketServiceApplication.executor": "Run",
+    "JUnit.CoreApplicationTests.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/from_past_pc/Labs 2 grade/ПП/Aeroport/Aeroport/Tasks.txt",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
-      <recent name="com.aviation.core.archiencrypt" />
+      <recent name="com.aviation.core.service" />
+      <recent name="com.aviation.core.security" />
+      <recent name="com.aviation.core.repository" />
+      <recent name="com.aviation.core.fileUtil" />
+      <recent name="com.aviation.core.controller" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -143,7 +161,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735766089630</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="added yaml format">
+      <option name="closed" value="true" />
+      <created>1735836704584</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1735836704584</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -156,6 +182,7 @@
     <MESSAGE value="added archivation and encryption" />
     <MESSAGE value="added changes for connection" />
     <MESSAGE value="created CRUD functions for ticket" />
-    <option name="LAST_COMMIT_MESSAGE" value="created CRUD functions for ticket" />
+    <MESSAGE value="added yaml format" />
+    <option name="LAST_COMMIT_MESSAGE" value="added yaml format" />
   </component>
 </project>

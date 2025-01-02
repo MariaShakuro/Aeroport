@@ -98,7 +98,7 @@ public class ConsoleApp implements CommandLineRunner {
         if (bookingCode.isEmpty()) { throw new IllegalArgumentException("Booking code cannot be empty"); }
         System.out.print("Enter baggage id number: ");
         long baggageIdNumber = scanner.nextLong();
-        scanner.nextLine(); // Consume newline
+        scanner.nextLine();
 
 
         TicketEntity ticket = new TicketEntity();
@@ -129,7 +129,6 @@ public class ConsoleApp implements CommandLineRunner {
         if(parts.length == 2){
             String passengerSurname = parts[0];
             String passengerName = parts[1];
-        scanner.nextLine();
         ticketService.getTicketBySurnameAndName(passengerSurname,passengerName);
         if (  ticketService.getTicketBySurnameAndName(passengerSurname,passengerName) != null) {
             ticketService.exportDataToFile(fileType, ticketService.getTicketBySurnameAndName(passengerSurname,passengerName));
@@ -147,7 +146,6 @@ public class ConsoleApp implements CommandLineRunner {
         if(parts.length == 2){
             String passengerSurname = parts[0];
             String passengerName = parts[1];
-            scanner.nextLine();
         System.out.print("Do you have a promoCode (yes/no)? ");
         String promoCode = "";
         boolean usePromoCode = scanner.nextLine().equalsIgnoreCase("yes");

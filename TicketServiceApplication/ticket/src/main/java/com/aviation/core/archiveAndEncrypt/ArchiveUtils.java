@@ -56,7 +56,6 @@ public class ArchiveUtils {
         // На данный момент junrar не поддерживает создание RAR-архивов
         throw new UnsupportedOperationException("Creating RAR archives is not supported by junrar.");
     }
-
     // Метод для разархивирования RAR
     public static void extractRarFile(String rarFilePath, String destDir) throws IOException, RarException {
         File rarFile = new File(rarFilePath);
