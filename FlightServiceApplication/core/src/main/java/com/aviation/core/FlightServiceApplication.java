@@ -8,12 +8,10 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 import java.util.Arrays;
-@Configuration
-@EnableAutoConfiguration
-@ComponentScan
-@SpringBootApplication
-public class FlightServiceApplication {
 
+@SpringBootApplication
+@ComponentScan(basePackages = {"com.aviation.core"})
+public class FlightServiceApplication {
 	public static void main(String[] args) {
 
 		ApplicationContext ctx=SpringApplication.run(FlightServiceApplication.class, args);

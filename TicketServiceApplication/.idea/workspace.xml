@@ -4,28 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d7b487b7-5e72-4a51-b8d3-977a6b82f23f" name="Changes" comment="added yaml format">
-      <change afterPath="$PROJECT_DIR$/ticket/src/test/java/com/aviation/core/archiveAndEncrypt/ArchiveUtilsTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ticket/src/test/java/com/aviation/core/archiveAndEncrypt/EncryptionUtilsTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ticket/src/test/java/com/aviation/core/arithmeticAdds/DataProcessorTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ticket/src/test/java/com/aviation/core/controller/TicketControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ticket/src/test/java/com/aviation/core/fileUtil/FileReaderUtilTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ticket/src/test/java/com/aviation/core/fileUtil/FileWriterUtilTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ticket/src/test/java/com/aviation/core/repository/TicketRepositoryTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ticket/src/test/java/com/aviation/core/security/SecurityConfigTicketTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ticket/src/test/java/com/aviation/core/service/BarcodeGeneratorTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ticket/src/test/java/com/aviation/core/service/ConsoleAppTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ticket/src/test/java/com/aviation/core/service/TicketServiceTest.java" afterDir="false" />
+    <list default="true" id="d7b487b7-5e72-4a51-b8d3-977a6b82f23f" name="Changes" comment="added unit tests">
+      <change beforePath="$PROJECT_DIR$/../Tasks.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Tasks.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ticket/src/main/java/com/aviation/core/DTO/TicketDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/ticket/src/main/java/com/aviation/core/DTO/TicketDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ticket/src/main/java/com/aviation/core/archiveAndEncrypt/ArchiveUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/ticket/src/main/java/com/aviation/core/archiveAndEncrypt/ArchiveUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ticket/src/main/java/com/aviation/core/arithmeticAdds/DataProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/ticket/src/main/java/com/aviation/core/arithmeticAdds/DataProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ticket/src/main/java/com/aviation/core/fileUtil/FileWriterUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/ticket/src/main/java/com/aviation/core/fileUtil/FileWriterUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ticket/src/main/java/com/aviation/core/repository/TicketRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/ticket/src/main/java/com/aviation/core/repository/TicketRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ticket/src/main/java/com/aviation/core/service/BarcodeGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/ticket/src/main/java/com/aviation/core/service/BarcodeGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ticket/src/main/java/com/aviation/core/service/ConsoleApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/ticket/src/main/java/com/aviation/core/service/ConsoleApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ticket/src/test/java/com/aviation/core/archiencrypt/JarFileTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ticket/src/test/java/com/aviation/core/archiencrypt/ZipFileTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,13 +37,14 @@
   "keyToString": {
     "Application.TicketServiceApplication.executor": "Run",
     "JUnit.CoreApplicationTests.executor": "Run",
+    "JUnit.TicketServiceTest.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/from_past_pc/Labs 2 grade/ПП/Aeroport/Aeroport/Tasks.txt",
+    "last_opened_file_path": "C:/from_past_pc/Labs 2 grade/ПП/Aeroport/Aeroport/FlightServiceApplication",
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0"
@@ -169,7 +151,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735836704584</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="added unit tests">
+      <option name="closed" value="true" />
+      <created>1735840625866</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1735840625866</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -183,6 +173,7 @@
     <MESSAGE value="added changes for connection" />
     <MESSAGE value="created CRUD functions for ticket" />
     <MESSAGE value="added yaml format" />
-    <option name="LAST_COMMIT_MESSAGE" value="added yaml format" />
+    <MESSAGE value="added unit tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="added unit tests" />
   </component>
 </project>

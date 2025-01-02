@@ -5,31 +5,21 @@ import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
-import java.util.Date;
+import java.time.LocalDateTime;
 
 @Entity
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name = "FLIGHTS")
-//для явного указания типа доступа.
-//@Access(AccessType.FIELD)
+@Table(name = "flights")
 public class FlightEntity {
-    //ID(ключ для бд)
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    //ID
-    private String personalID;
-    //Рейс
-    private String flight;
-    //Страна-страна
-    private String city;
-    //Время прилета/отлета
-    private Date time;
-    //Статус
+    private String flightNumber;
+    private String departureAirport;
+    private String arrivalAirport;
+    private LocalDateTime departureTime;
+    private LocalDateTime arrivalTime;
     private String status;
-
-
 }
