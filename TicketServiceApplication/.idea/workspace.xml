@@ -4,39 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d7b487b7-5e72-4a51-b8d3-977a6b82f23f" name="Changes" comment="added changes for connection">
-      <change afterPath="$PROJECT_DIR$/ticket/src/main/java/com/aviation/core/archiveAndEncrypt/ArchiveUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ticket/src/main/java/com/aviation/core/arithmeticAdds/DataProcessor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ticket/src/main/java/com/aviation/core/fileUtil/FileReaderUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ticket/src/main/java/com/aviation/core/fileUtil/FileWriterUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ticket/src/main/java/com/aviation/core/service/BarcodeGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ticket/src/main/java/com/aviation/core/service/ConsoleApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ticket/src/main/java/com/aviation/core/service/TicketService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DisplayServiceApplication/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../DisplayServiceApplication/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tasks.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Tasks.txt" afterDir="false" />
+    <list default="true" id="d7b487b7-5e72-4a51-b8d3-977a6b82f23f" name="Changes" comment="created CRUD functions for ticket">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TicketInfo.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TicketInfo.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TicketInfo.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TicketInfo.yaml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ticket/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ticket/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ticket/src/main/java/TicketConsolExplorer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ticket/src/main/java/com/aviation/core/DTO/TicketDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/ticket/src/main/java/com/aviation/core/DTO/TicketDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ticket/src/main/java/com/aviation/core/TicketConfiguration.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ticket/src/main/java/com/aviation/core/TicketServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/ticket/src/main/java/com/aviation/core/TicketServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ticket/src/main/java/com/aviation/core/archiencrypt/ArchiveUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ticket/src/main/java/com/aviation/core/archiencrypt/Encryption.java" beforeDir="false" afterPath="$PROJECT_DIR$/ticket/src/main/java/com/aviation/core/archiveAndEncrypt/EncryptionUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ticket/src/main/java/com/aviation/core/archiencrypt/FileProcessor.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ticket/src/main/java/com/aviation/core/controller/TicketController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ticket/src/main/java/com/aviation/core/controller/TicketController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ticket/src/main/java/com/aviation/core/database/DatabaseConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/ticket/src/main/java/com/aviation/core/database/DatabaseConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ticket/src/main/java/com/aviation/core/entity/TicketEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/ticket/src/main/java/com/aviation/core/entity/TicketEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ticket/src/main/java/com/aviation/core/format/FileFormat.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ticket/src/main/java/com/aviation/core/format/JSONFormat.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ticket/src/main/java/com/aviation/core/format/TXTFormat.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ticket/src/main/java/com/aviation/core/format/XMLFormat.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ticket/src/main/java/com/aviation/core/format/YAMLFormat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ticket/src/main/java/com/aviation/core/fileUtil/FileReaderUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/ticket/src/main/java/com/aviation/core/fileUtil/FileReaderUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ticket/src/main/java/com/aviation/core/fileUtil/FileWriterUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/ticket/src/main/java/com/aviation/core/fileUtil/FileWriterUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ticket/src/main/java/com/aviation/core/repository/TicketRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/ticket/src/main/java/com/aviation/core/repository/TicketRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ticket/src/main/java/com/aviation/core/service/TicketSevice.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ticket/src/main/java/com/aviation/core/service/ConsoleApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/ticket/src/main/java/com/aviation/core/service/ConsoleApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ticket/src/main/java/com/aviation/core/service/TicketService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ticket/src/main/java/com/aviation/core/service/TicketService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,21 +39,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.TicketServiceApplication.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/from_past_pc/Labs 2 grade/ПП/Aeroport/Aeroport/Tasks.txt",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.TicketServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/from_past_pc/Labs 2 grade/ПП/Aeroport/Aeroport/Tasks.txt&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -159,7 +135,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733175619894</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="created CRUD functions for ticket">
+      <option name="closed" value="true" />
+      <created>1735766089630</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1735766089630</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -171,6 +155,7 @@
     <MESSAGE value="added formations" />
     <MESSAGE value="added archivation and encryption" />
     <MESSAGE value="added changes for connection" />
-    <option name="LAST_COMMIT_MESSAGE" value="added changes for connection" />
+    <MESSAGE value="created CRUD functions for ticket" />
+    <option name="LAST_COMMIT_MESSAGE" value="created CRUD functions for ticket" />
   </component>
 </project>

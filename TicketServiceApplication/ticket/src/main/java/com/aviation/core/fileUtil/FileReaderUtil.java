@@ -4,6 +4,9 @@ import java.io.*;
 import java.nio.file.*;
 import java.util.List;
 import javax.xml.parsers.*;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.dataformat.yaml.YAMLFactory;
 import org.w3c.dom.*;
 import com.google.gson.*;
 
@@ -27,6 +30,12 @@ public class FileReaderUtil {
         try (Reader reader = Files.newBufferedReader(Paths.get(filePath))) {
             Gson gson = new Gson();
             return gson.fromJson(reader, clazz);
+        }
+    }
+    public static <T> T readYamlFile(String filePath,Class<T>clazz)throws  IOException{
+        try(Reader reader=Files.newBufferedReader(Paths.get(filePath))){
+            ObjectMapper mapper=new ObjectMapper(new YAMLFactory());
+            return mapper.readValue(reader,clazz);
         }
     }
 }

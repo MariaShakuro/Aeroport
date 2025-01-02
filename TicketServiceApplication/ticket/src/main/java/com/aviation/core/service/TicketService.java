@@ -48,7 +48,10 @@ public class TicketService {
                 break;
             case "json":
                 TicketDTO ticketData = FileReaderUtil.readJsonFile(filePath, TicketDTO.class);
+                break;
                 // Обработка данных
+            case "yaml":
+                TicketDTO ticketInfo=FileReaderUtil.readYamlFile(filePath,TicketDTO.class);
                 break;
             default:
                 throw new IllegalArgumentException("Unsupported file type: " + fileType);
@@ -66,6 +69,9 @@ public class TicketService {
             case "json":
                 FileWriterUtil.writeJsonFile(filePath,ticket);
                 break;
+            case "yaml":
+                FileWriterUtil.writeYamlFile(filePath,ticket);
+                break;
             default:
                 throw new IllegalArgumentException("Unsupported file type: " + fileType);
         }
@@ -82,13 +88,16 @@ public class TicketService {
             case "json":
                 FileWriterUtil.writeJsonFile(filePath, ticket);
                 break;
+            case "yaml":
+                FileWriterUtil.writeYamlFile(filePath,ticket);
+                break;
             default:
                 throw new IllegalArgumentException("Unsupported file type: " + fileType);
         }
     }
 
-    public TicketEntity updateTicketPrice(String surname, String promoCode, boolean useMiles, int miles) {
-        TicketEntity ticket = getTicketBySurname(surname);
+    public TicketEntity updateTicketPrice(String passengerSurname,String passengerName, String promoCode, boolean useMiles, int miles) {
+        TicketEntity ticket = getTicketBySurnameAndName(passengerSurname,passengerName);
         if (ticket != null) {
             double updatedPrice = DataProcessor.calculateTotalCost(ticket, promoCode, useMiles, miles);
             ticket.setTicketPrice(updatedPrice);
@@ -165,14 +174,17 @@ public class TicketService {
             case "txt":
                 FileWriterUtil.writeTextFile(fileName, ticket);
                  break;
-                 case "xml":
-                     FileWriterUtil.writeXmlFile(fileName, ticket);
-                     break;
-                     case "json":
-                         FileWriterUtil.writeJsonFile(fileName, ticket);
-                         break;
-                         default:
-                             throw new IllegalArgumentException("Unsupported file type: " + fileType);
+            case "xml":
+                FileWriterUtil.writeXmlFile(fileName, ticket);
+                break;
+            case "json":
+                FileWriterUtil.writeJsonFile(fileName, ticket);
+                break;
+            case "yaml":
+                FileWriterUtil.writeYamlFile(fileName,ticket);
+                break;
+                default:
+                    throw new IllegalArgumentException("Unsupported file type: " + fileType);
         }
     }
     // Вспомогательные методы
@@ -182,5 +194,5 @@ public class TicketService {
     private void writeFile(String filePath, String data) throws IOException {
         Files.write(Paths.get(filePath), data.getBytes());
     }
-    public TicketEntity getTicketBySurname(String passengerSurname) { return ticketRepository.findByPassengerSurname(passengerSurname); }
+    public TicketEntity getTicketBySurnameAndName(String passengerSurname,String passengerName) { return ticketRepository.findByPassengerSurnameAndPassengerName(passengerSurname,passengerName); }
 }

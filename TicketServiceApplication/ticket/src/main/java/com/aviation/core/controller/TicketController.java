@@ -62,10 +62,10 @@ public class TicketController {
     }
 
     @PutMapping("/process")
-    public ResponseEntity<String> processData(@RequestParam String passengerSurname, @RequestParam String promoCode,
+    public ResponseEntity<String> processData(@RequestParam String passengerSurname,@RequestParam String passengerName, @RequestParam String promoCode,
                                               @RequestParam boolean useMiles,@RequestParam int miles) {
         try {
-           TicketEntity updatedTicket= ticketService.updateTicketPrice(passengerSurname, promoCode, useMiles, miles);
+           TicketEntity updatedTicket= ticketService.updateTicketPrice(passengerSurname, passengerName,promoCode, useMiles, miles);
            if(updatedTicket != null) return new ResponseEntity<>("Data processed successfully.Updated ticket price"+ updatedTicket.getTicketPrice(),HttpStatus.OK);
            else return new ResponseEntity<>("Ticket not found for passenger surname:"+ passengerSurname,HttpStatus.NOT_FOUND);
         } catch (Exception e) {

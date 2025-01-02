@@ -4,6 +4,7 @@ import com.aviation.core.TicketServiceApplication;
 import com.aviation.core.entity.TicketEntity;
 import com.google.zxing.WriterException;
 import org.springframework.boot.CommandLineRunner;
+import org.springframework.data.crossstore.ChangeSetPersister;
 import org.springframework.stereotype.Component;
 
 import java.io.IOException;
@@ -120,23 +121,33 @@ public class ConsoleApp implements CommandLineRunner {
         System.out.println("Ticket created successfully!");
     }
     private  void exportData(Scanner scanner) throws IOException {
-        System.out.print("Enter file type (json/xml/txt): ");
+        System.out.print("Enter file type (json/xml/txt/yaml): ");
         String fileType = scanner.nextLine();
-        System.out.print("Enter passenger surname to export: ");
-        String passengerSurname = scanner.nextLine();
+        System.out.print("Enter passenger surname and name to export: ");
+        String input=scanner.nextLine();
+        String[] parts=input.split(" ",2);
+        if(parts.length == 2){
+            String passengerSurname = parts[0];
+            String passengerName = parts[1];
         scanner.nextLine();
-        ticketService.getTicketBySurname(passengerSurname);
-        if (  ticketService.getTicketBySurname(passengerSurname) != null) {
-            ticketService.exportDataToFile(fileType, ticketService.getTicketBySurname(passengerSurname));
+        ticketService.getTicketBySurnameAndName(passengerSurname,passengerName);
+        if (  ticketService.getTicketBySurnameAndName(passengerSurname,passengerName) != null) {
+            ticketService.exportDataToFile(fileType, ticketService.getTicketBySurnameAndName(passengerSurname,passengerName));
             System.out.println("Data exported successfully to output/ticket." + fileType);
         }
         else {
             System.out.println("Ticket not found with ID: " + passengerSurname);
         }
+        }else System.out.println("There are only 2 parts:Surname and Name");
     }
     private void calculateNewTicketPrice(Scanner scanner){
-        System.out.print("Enter passenger surname: ");
-        String surname = scanner.nextLine();
+        System.out.print("Enter passenger surname and name: ");
+        String input=scanner.nextLine();
+        String[] parts=input.split(" ",2);
+        if(parts.length == 2){
+            String passengerSurname = parts[0];
+            String passengerName = parts[1];
+            scanner.nextLine();
         System.out.print("Do you have a promoCode (yes/no)? ");
         String promoCode = "";
         boolean usePromoCode = scanner.nextLine().equalsIgnoreCase("yes");
@@ -151,9 +162,10 @@ public class ConsoleApp implements CommandLineRunner {
             System.out.print("Enter your count of miles: ");
             miles = scanner.nextInt();
         }
-        TicketEntity updatedTicket = ticketService.updateTicketPrice(surname, promoCode, useMiles, miles);
+        TicketEntity updatedTicket = ticketService.updateTicketPrice(passengerSurname,passengerName, promoCode, useMiles, miles);
         if (updatedTicket != null) System.out.println("Updated ticket price: " + updatedTicket.getTicketPrice());
-        else  System.out.println("Ticket not found for passenger surname: " + surname);
+        else  System.out.println("Ticket not found for passenger surname and name: " + passengerSurname+passengerName);
+    }
     }
 }
 

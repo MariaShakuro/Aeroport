@@ -7,6 +7,7 @@ import javax.xml.transform.*;
 
 import com.aviation.core.entity.TicketEntity;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.dataformat.yaml.YAMLFactory;
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 import com.google.gson.*;
 import org.w3c.dom.*;
@@ -133,6 +134,11 @@ public class FileWriterUtil {
         ObjectMapper objectMapper = new ObjectMapper();
         objectMapper.registerModule(new JavaTimeModule());
         objectMapper.writerWithDefaultPrettyPrinter().writeValue(new File(filePath), ticket);
+    }
+    public static void writeYamlFile(String filePath,TicketEntity ticket)throws IOException{
+        ObjectMapper objectMapper=new ObjectMapper(new YAMLFactory());
+        objectMapper.registerModule(new JavaTimeModule());
+        objectMapper.writerWithDefaultPrettyPrinter().writeValue(new File(filePath),ticket);
     }
 }
 
