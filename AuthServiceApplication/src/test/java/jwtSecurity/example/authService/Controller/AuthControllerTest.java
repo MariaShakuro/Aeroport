@@ -1,4 +1,4 @@
-package jwtSecurity.example.jwtDemo.Controller;
+package jwtSecurity.example.authService.Controller;
 
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.ArgumentMatchers.anyString;
@@ -6,10 +6,10 @@ import static org.mockito.Mockito.when;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
-import jwtSecurity.example.jwtDemo.Config.JwtTokenProvider;
-import jwtSecurity.example.jwtDemo.Dto.AuthResponseDto;
-import jwtSecurity.example.jwtDemo.Dto.LoginDto;
-import jwtSecurity.example.jwtDemo.Service.AuthService;
+import jwtSecurity.example.authService.Config.JwtTokenProvider;
+import jwtSecurity.example.authService.Dto.AuthResponseDto;
+import jwtSecurity.example.authService.Dto.LoginDto;
+import jwtSecurity.example.authService.Service.AuthService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;

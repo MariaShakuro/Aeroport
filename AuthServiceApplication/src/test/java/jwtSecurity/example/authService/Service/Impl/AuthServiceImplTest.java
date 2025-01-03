@@ -1,12 +1,12 @@
-package jwtSecurity.example.jwtDemo.Service.Impl;
+package jwtSecurity.example.authService.Service.Impl;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
 
 import java.util.ArrayList;
 import java.util.Collection;
 
-import jwtSecurity.example.jwtDemo.Config.JwtTokenProvider;
-import jwtSecurity.example.jwtDemo.Dto.LoginDto;
+import jwtSecurity.example.authService.Config.JwtTokenProvider;
+import jwtSecurity.example.authService.Dto.LoginDto;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;

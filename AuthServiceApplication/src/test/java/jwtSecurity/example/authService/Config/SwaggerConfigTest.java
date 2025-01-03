@@ -1,15 +1,13 @@
-package jwtSecurity.example.jwtDemo.Config;
+package jwtSecurity.example.authService.Config;
 
 import io.swagger.v3.oas.models.OpenAPI;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
-import org.mockito.InjectMocks;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.boot.test.context.TestConfiguration;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
 
 import org.springdoc.core.GroupedOpenApi;
 

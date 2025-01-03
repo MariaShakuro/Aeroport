@@ -1,7 +1,7 @@
-package jwtSecurity.example.jwtDemo.Service;
+package jwtSecurity.example.authService.Service;
 
-import jwtSecurity.example.jwtDemo.Dto.LoginDto;
-import jwtSecurity.example.jwtDemo.Dto.RegisterDto;
+import jwtSecurity.example.authService.Dto.LoginDto;
+import jwtSecurity.example.authService.Dto.RegisterDto;
 
 public interface AuthService {
     String login(LoginDto loginDto);

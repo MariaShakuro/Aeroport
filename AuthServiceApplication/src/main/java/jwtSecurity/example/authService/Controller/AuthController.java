@@ -1,14 +1,14 @@
-package jwtSecurity.example.jwtDemo.Controller;
+package jwtSecurity.example.authService.Controller;
 
 
 import jakarta.validation.Valid;
-import jwtSecurity.example.jwtDemo.Config.JwtTokenProvider;
-import jwtSecurity.example.jwtDemo.Dto.AuthResponseDto;
-import jwtSecurity.example.jwtDemo.Dto.LoginDto;
-import jwtSecurity.example.jwtDemo.Dto.RegisterDto;
-import jwtSecurity.example.jwtDemo.Model.User;
-import jwtSecurity.example.jwtDemo.Service.AuthService;
-import jwtSecurity.example.jwtDemo.exception.DuplicateException;
+import jwtSecurity.example.authService.Config.JwtTokenProvider;
+import jwtSecurity.example.authService.Dto.AuthResponseDto;
+import jwtSecurity.example.authService.Dto.LoginDto;
+import jwtSecurity.example.authService.Dto.RegisterDto;
+import jwtSecurity.example.authService.Model.User;
+import jwtSecurity.example.authService.Service.AuthService;
+import jwtSecurity.example.authService.exception.DuplicateException;
 import lombok.AllArgsConstructor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

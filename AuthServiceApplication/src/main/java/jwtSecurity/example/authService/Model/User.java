@@ -1,4 +1,4 @@
-package jwtSecurity.example.jwtDemo.Model;
+package jwtSecurity.example.authService.Model;
 
 
 import jakarta.persistence.*;

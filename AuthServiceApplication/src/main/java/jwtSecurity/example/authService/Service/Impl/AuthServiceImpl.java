@@ -1,14 +1,14 @@
-package jwtSecurity.example.jwtDemo.Service.Impl;
+package jwtSecurity.example.authService.Service.Impl;
 
-import jwtSecurity.example.jwtDemo.Config.JwtTokenProvider;
-import jwtSecurity.example.jwtDemo.Dto.LoginDto;
-import jwtSecurity.example.jwtDemo.Dto.RegisterDto;
-import jwtSecurity.example.jwtDemo.Model.Role;
-import jwtSecurity.example.jwtDemo.Model.User;
-import jwtSecurity.example.jwtDemo.Repository.RoleRepository;
-import jwtSecurity.example.jwtDemo.Repository.UserRepository;
-import jwtSecurity.example.jwtDemo.Service.AuthService;
-import jwtSecurity.example.jwtDemo.exception.DuplicateException;
+import jwtSecurity.example.authService.Config.JwtTokenProvider;
+import jwtSecurity.example.authService.Dto.LoginDto;
+import jwtSecurity.example.authService.Dto.RegisterDto;
+import jwtSecurity.example.authService.Model.Role;
+import jwtSecurity.example.authService.Model.User;
+import jwtSecurity.example.authService.Repository.RoleRepository;
+import jwtSecurity.example.authService.Repository.UserRepository;
+import jwtSecurity.example.authService.Service.AuthService;
+import jwtSecurity.example.authService.exception.DuplicateException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;

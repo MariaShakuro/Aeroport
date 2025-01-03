@@ -1,6 +1,4 @@
-package jwtSecurity.example.jwtDemo.Config;
-
-import static org.junit.jupiter.api.Assertions.*;
+package jwtSecurity.example.authService.Config;
 
 import static org.mockito.Mockito.*;
 

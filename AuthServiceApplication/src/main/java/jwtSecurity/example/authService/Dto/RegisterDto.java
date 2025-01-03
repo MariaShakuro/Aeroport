@@ -1,4 +1,4 @@
-package jwtSecurity.example.jwtDemo.Dto;
+package jwtSecurity.example.authService.Dto;
 
 import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.Min;

@@ -1,4 +1,4 @@
-package jwtSecurity.example.jwtDemo.Config;
+package jwtSecurity.example.authService.Config;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
 
@@ -8,7 +8,6 @@ import java.util.Collection;
 import java.util.Arrays;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
-import io.jsonwebtoken.security.Keys;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;

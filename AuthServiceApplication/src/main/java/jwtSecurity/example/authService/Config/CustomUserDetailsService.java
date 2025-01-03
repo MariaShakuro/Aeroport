@@ -1,7 +1,7 @@
-package jwtSecurity.example.jwtDemo.Config;
+package jwtSecurity.example.authService.Config;
 
-import jwtSecurity.example.jwtDemo.Model.User;
-import jwtSecurity.example.jwtDemo.Repository.UserRepository;
+import jwtSecurity.example.authService.Model.User;
+import jwtSecurity.example.authService.Repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;

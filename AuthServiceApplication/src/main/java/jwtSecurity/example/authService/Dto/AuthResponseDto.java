@@ -1,4 +1,4 @@
-package jwtSecurity.example.jwtDemo.Dto;
+package jwtSecurity.example.authService.Dto;
 
 import lombok.Data;
 import lombok.Getter;
