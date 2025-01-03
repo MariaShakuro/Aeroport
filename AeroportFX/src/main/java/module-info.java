@@ -4,7 +4,9 @@ module org.example.aeroportfx {
 
     requires org.controlsfx.controls;
     requires org.kordamp.bootstrapfx.core;
-
-    opens org.example.aeroportfx to javafx.fxml;
+    requires javafx.media;
+    requires java.desktop;
+    opens org.example.aeroportfx.controller to javafx.fxml;
     exports org.example.aeroportfx;
+
 }
