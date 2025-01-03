@@ -25,12 +25,7 @@ public class FlightController {
          FlightEntity createdFlight=flightService.createFlight(flight);
          return new ResponseEntity<>(createdFlight,HttpStatus.CREATED);
     }
-    /*@GetMapping("/search")
-    public ResponseEntity<List<FlightEntity>>searchFlights(@RequestParam String departureAirport, @RequestParam String arrivalAirport,
-                                                           @RequestParam LocalDateTime start,@RequestParam LocalDateTime end){
-        List<FlightEntity>flights=flightService.getFlights(departureAirport,arrivalAirport,start,end);
-        return new ResponseEntity<>(flights,HttpStatus.OK);
-    }*/
+
     @DeleteMapping("/delete/{id}")
     public ResponseEntity<Void>deleteFlight(@PathVariable Long id){
         flightService.deleteFlight(id);
@@ -42,10 +37,8 @@ public class FlightController {
         return ResponseEntity.ok(updatedFlight);
     }
     @GetMapping
-    public ResponseEntity<List<FlightEntity>> getFlights(@RequestParam String departureAirport, @RequestParam String arrivalAirport,
-                                                         @RequestParam @DateTimeFormat(iso = DateTimeFormat.ISO.DATE_TIME) LocalDateTime start,
-                                                         @RequestParam @DateTimeFormat(iso = DateTimeFormat.ISO.DATE_TIME) LocalDateTime end) {
-        List<FlightEntity> flights = flightService.getFlights(departureAirport, arrivalAirport, start, end);
+    public ResponseEntity<List<FlightEntity>> getAllFlights() {
+        List<FlightEntity> flights = flightService.getAllFlights();
         return ResponseEntity.ok(flights);
     }
 

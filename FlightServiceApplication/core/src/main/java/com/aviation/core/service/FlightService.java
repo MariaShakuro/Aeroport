@@ -18,20 +18,25 @@ public class FlightService {
     private FlightRepository flightRepository;
 
     public FlightEntity createFlight(FlightEntity flight) {
-        // Дополнительная логика
         return flightRepository.save(flight);
     }
     public void deleteFlight(Long flightId){
         FlightEntity flight = flightRepository.findById(flightId).orElseThrow(() -> new RuntimeException("Flight not found"));
         flightRepository.delete(flight);
     }
-    public List<FlightEntity> getFlights(String departureAirport, String arrivalAirport, LocalDateTime start, LocalDateTime end) {
-        return flightRepository.findByDepartureAirportAndArrivalAirportAndDepartureTimeBetween(departureAirport, arrivalAirport, start, end);
+    public List<FlightEntity> getAllFlights() {
+        return flightRepository.findAll();
     }
     public FlightEntity updateFlight(Long flightId, Map<String, Object> updates) {
         FlightEntity flight = flightRepository.findById(flightId).orElseThrow(() -> new RuntimeException("Flight not found"));
         updates.forEach((key, value) -> {
             switch (key) {
+                case "CityOfRegistration":
+                    flight.setCityOfRegistration((String) value);
+                    break;
+                case "CityOfDestination":
+                    flight.setCityOfDestination((String) value);
+                    break;
                 case "departureTime":
                     flight.setDepartureTime((LocalDateTime) value);
                     break;
@@ -47,17 +52,6 @@ public class FlightService {
         });
         return flightRepository.save(flight);
     }
-
-
-   /* @Scheduled(fixedRate = 60000)
-    public void updateFlightStatuses() {
-        List<FlightEntity> flights = flightRepository.findAll();
-        for (FlightEntity flight : flights) {
-            // Обновление статусов рейсов
-            flight.setStatus("Updated Status");
-            flightRepository.save(flight);
-        }
-    }*/
 
 }
 
