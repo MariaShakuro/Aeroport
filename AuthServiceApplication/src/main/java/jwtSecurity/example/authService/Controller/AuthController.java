@@ -55,4 +55,9 @@ public class AuthController {
         logger.debug("Is token valid: {}", isValid);
         return ResponseEntity.ok(isValid);
     }
+    @GetMapping("/check-user")
+    public ResponseEntity<Boolean> checkUserExists(@RequestParam String email) {
+        boolean exists = authService.checkUserExistsByEmail(email);
+        return ResponseEntity.ok(exists);
+    }
 }

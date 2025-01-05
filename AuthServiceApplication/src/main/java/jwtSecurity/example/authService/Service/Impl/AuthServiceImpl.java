@@ -70,4 +70,9 @@ public class AuthServiceImpl implements AuthService {
         return jwtTokenProvider.generateToken(authentication);
     }
 
+    @Override
+    public boolean checkUserExistsByEmail(String email) {
+        return userRepository.existsByEmail(email);
+    }
+
 }

@@ -75,7 +75,7 @@ public class MainController implements Initializable {
 
     @FXML
     private void buyTicket(ActionEvent event)throws IOException {
-        navigateToPage(event, "/org/example/aeroportfx/Register.fxml");
+        navigateToPage(event, "/org/example/aeroportfx/RegisterPage.fxml");
     }
 
     @FXML

@@ -1,16 +1,26 @@
 package org.example.aeroportfx.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+import java.time.LocalDateTime;
+
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Flight {
     private String flightNumber;
-    private String destination;
+    private String cityOfRegistration;
+    private String cityOfDestination;
     private String status;
-    private String time;
+    private LocalDateTime departureTime;
+    private LocalDateTime arrivalTime;
 
-    public Flight(String flightNumber, String destination, String status, String time) {
+    public Flight(){}
+    public Flight(String flightNumber,String cityOfRegistration,String cityOfDestination, String status,LocalDateTime departureTime,LocalDateTime arrivalTime ) {
         this.flightNumber = flightNumber;
-        this.destination = destination;
+        this.cityOfRegistration=cityOfRegistration;
+        this.cityOfDestination=cityOfDestination;
         this.status = status;
-        this.time = time;
+        this.departureTime=departureTime;
+        this.arrivalTime=arrivalTime;
     }
 
     public String getFlightNumber() {
@@ -21,14 +31,6 @@ public class Flight {
         this.flightNumber = flightNumber;
     }
 
-    public String getDestination() {
-        return destination;
-    }
-
-    public void setDestination(String destination) {
-        this.destination = destination;
-    }
-
     public String getStatus() {
         return status;
     }
@@ -37,11 +39,35 @@ public class Flight {
         this.status = status;
     }
 
-    public String getTime() {
-        return time;
+    public LocalDateTime getArrivalTime() {
+        return arrivalTime;
     }
 
-    public void setTime(String time) {
-        this.time = time;
+    public void setArrivalTime(LocalDateTime arrivalTime) {
+        this.arrivalTime = arrivalTime;
+    }
+
+    public void setDepartureTime(LocalDateTime departureTime) {
+        this.departureTime = departureTime;
+    }
+
+    public LocalDateTime getDepartureTime() {
+        return departureTime;
+    }
+
+    public String getCityOfDestination() {
+        return cityOfDestination;
+    }
+
+    public void setCityOfDestination(String cityOfDestination) {
+        this.cityOfDestination = cityOfDestination;
+    }
+
+    public String getCityOfRegistration() {
+        return cityOfRegistration;
+    }
+
+    public void setCityOfRegistration(String cityOfRegistration) {
+        this.cityOfRegistration = cityOfRegistration;
     }
 }
