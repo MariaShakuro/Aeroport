@@ -1,9 +1,4 @@
 # Aeroport
--SpringBoot
--JVC паттерн
--Hibernates
--RestApi
--MySql
--Микросервисная архитектура
--React.js
--Maven
+В связи с временной неразрешенностью конфликтов в гите мой проект здесь:
+
+[тык](https://github.com/MariaShakuro/Aeroport2)
